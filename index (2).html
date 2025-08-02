@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clean&Plant 2004 S.R.L.</title>
+  <meta name="description" content="Clean&Plant 2004 S.R.L. oferă servicii de curățenie, silvicultură, grădinărit și amenajări interioare în Germania. Profesioniști dedicați naturii.">
+  <meta name="keywords" content="curățenie, silvicultură, grădinărit, amenajări interioare, Germania, Clean&Plant">
+  <meta name="author" content="Clean&Plant 2004 S.R.L.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4fff4; margin: 0; padding: 0; }
+    header { background: #2e7d32; color: white; padding: 20px; text-align: center; position: relative; }
+    nav { background: #81c784; padding: 10px; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
+    section { padding: 20px; }
+    footer { background: #388e3c; color: white; text-align: center; padding: 10px; }
+    .lang { position: absolute; top: 20px; right: 20px; }
+    .lang button { margin: 0 5px; padding: 5px 10px; }
+    .gallery img { width: 200px; height: auto; margin: 10px; border-radius: 10px; box-shadow: 0 0 5px #555; }
+    .contact-form input, .contact-form textarea { display: block; margin-bottom: 10px; padding: 10px; width: 100%; max-width: 500px; }
+    .contact-form button { padding: 10px 20px; background: #2e7d32; color: white; border: none; cursor: pointer; }
+    .whatsapp { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 10px 15px; border-radius: 50px; text-decoration: none; font-size: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
+  </style>
+  <script>
+    const content = {
+      ro: {
+        home: "Bine ați venit la Clean&Plant 2004 S.R.L.",
+        about: "Suntem o firmă dinamică cu experiență în silvicultură, curățenie, grădinărit și amenajări interioare.",
+        services: "Serviciile noastre includ întreținere spații verzi, igienizare industrială, lucrări silvice și renovări interioare.",
+        contact: "Contactați-ne: info@cleanandplant2004.com | +49 172 486 7610",
+        blog: "Ultimele noutăți: Ne extindem în zona Hannover! Căutăm parteneri și colaboratori locali.",
+        slogan: "Curățenie. Natură. Profesionalism."
+      },
+      de: {
+        home: "Willkommen bei Clean&Plant 2004 S.R.L.",
+        about: "Wir sind ein dynamisches Unternehmen mit Erfahrung in Forstwirtschaft, Reinigung, Gartenpflege und Innenausbau.",
+        services: "Unsere Dienstleistungen umfassen Grünflächenpflege, industrielle Reinigung, forstwirtschaftliche Arbeiten und Innenrenovierungen.",
+        contact: "Kontaktieren Sie uns: info@cleanandplant2004.com | +49 172 486 7610",
+        blog: "Neuigkeiten: Wir expandieren in der Region Hannover! Wir suchen lokale Partner und Mitarbeiter.",
+        slogan: "Sauberkeit. Natur. Professionalität."
+      },
+      en: {
+        home: "Welcome to Clean&Plant 2004 S.R.L.",
+        about: "We are a dynamic company with experience in forestry, cleaning, gardening, and interior renovations.",
+        services: "Our services include green area maintenance, industrial cleaning, forestry works, and interior makeovers.",
+        contact: "Contact us: info@cleanandplant2004.com | +49 172 486 7610",
+        blog: "Latest news: We are expanding in the Hannover area! Looking for local partners and collaborators.",
+        slogan: "Cleanliness. Nature. Professionalism."
+      }
+    };
+
+    function setLanguage(lang) {
+      document.getElementById('home').innerText = content[lang].home;
+      document.getElementById('about').innerText = content[lang].about;
+      document.getElementById('services').innerText = content[lang].services;
+      document.getElementById('contact').innerText = content[lang].contact;
+      document.getElementById('blog').innerText = content[lang].blog;
+      document.getElementById('slogan').innerText = content[lang].slogan;
+    }
+  </script>
+</head>
+<body onload="setLanguage('ro')">
+  <header>
+    <h1 id="slogan">Curățenie. Natură. Profesionalism.</h1>
+    <div class="lang">
+      <button onclick="setLanguage('ro')">RO</button>
+      <button onclick="setLanguage('de')">DE</button>
+      <button onclick="setLanguage('en')">EN</button>
+    </div>
+  </header>
+  <nav>
+    <a href="#home">Acasă</a>
+    <a href="#about">Despre noi</a>
+    <a href="#services">Servicii</a>
+    <a href="#gallery">Galerie</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section>
+    <h2 id="home"></h2>
+    <p id="about"></p>
+    <p id="services"></p>
+
+    <div class="gallery" id="gallery">
+      <h3>Galerie</h3>
+      <img src="https://via.placeholder.com/200x120?text=Lucrare+1" alt="Lucrare 1"/>
+      <img src="https://via.placeholder.com/200x120?text=Lucrare+2" alt="Lucrare 2"/>
+      <img src="https://via.placeholder.com/200x120?text=Lucrare+3" alt="Lucrare 3"/>
+    </div>
+
+    <div id="blog">
+      <h3>Blog / Noutăți</h3>
+    </div>
+
+    <div id="map">
+      <h3>Locație</h3>
+      <iframe src="https://www.google.com/maps?q=Bruchhofenstraße+2,+31171+Nordstemmen,+Germany&output=embed" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+
+    <div class="contact-form" id="contact">
+      <h3>Contact</h3>
+      <form action="https://formsubmit.co/your@email.com" method="POST">
+        <input type="text" name="name" placeholder="Nume" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" rows="5" placeholder="Mesajul tău" required></textarea>
+        <button type="submit">Trimite</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 Clean&Plant 2004 S.R.L. | Nordstemmen, Germania
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/491724867610" target="_blank" title="Contactează-ne pe WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+</html>
